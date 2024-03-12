@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+</head>
+<body>
+    <h3>{{ time }}</h3>
+    {% for task in recent_tasks %}
+        <div>
+            <p>{{ task.task_details_id.title }}</p>
+            <p>{{ task.due_date_time }}</p>
+            <input type="checkbox" {% if task.task_details_id.finished %}checked{% endif %}>
+        </div>
+    {% endfor %}
+
+</body>
+</html>
