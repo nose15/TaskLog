@@ -1,2 +1,2 @@
-# TodoDjango
+# Task Log
 Simple Django app to help me stay prepared for my university classes 
